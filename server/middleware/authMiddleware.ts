@@ -1,5 +1,7 @@
+import {NextFunction, Request, Response} from "express";
+
 const jwt = require('jsonwebtoken')
-module.exports = function (req, res, next){
+module.exports = function (req: Request,res: Response, next: NextFunction){
     if (req.method === 'OPTIONS'){
         next()
     }

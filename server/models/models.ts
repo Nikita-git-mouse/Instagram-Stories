@@ -38,7 +38,7 @@ Private.belongsTo(Gallery)
 Public.hasMany(Video)
 Video.belongsTo(Public)
 
-Private.hasOne(Video)
+Private.hasMany(Video)
 Video.belongsTo(Private)
 
 
